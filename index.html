@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============================== CSS ============================== -->
+    <link rel="stylesheet" href="style.css">
+    <title>FORM SUBMISSION</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-body">
+            <!-- ====== form start ======  -->
+            <form action="pdf.php" method="post" class="form-box">
+                <!-- ====== form title ====== -->
+                <div class="title">
+                    <h2>Form Submission with PDF Creation</h2>
+                </div>
+                <!-- ====== inputs start ====== -->
+                <div class="inputs">
+                    <div class="input-info">
+                        <input type="text" placeholder="Name..." name="name" id="name">
+                    </div>
+                    <div class="input-info">
+                        <input type="number" placeholder="Number..." name="number" id="number">
+                    </div>
+                    <div class="input-info">
+                        <input type="text" placeholder="City..." name="city" id="city">
+                    </div>
+                    <div class="input-info">
+                        <input type="submit" value="Submit" class="submit" name="submit"  onclick="messageBoxShow()">
+                    </div>
+                </div>
+                <!-- ====== inputs end ====== -->
+            </form>
+            <!-- ====== form end ======  -->
+        </div>
+    </div>
+    <!-- ======= submit message start ======  -->
+    <div class="submit-message-box" id="box">
+        <h2 onclick="hideToggler()">x</h2>
+        <p>Your message has been sent <span>successfully!</span></p>
+     </div>
+  <!-- ======= submit message ennd ======  -->
+
+
+  <!-- =============================== js =============================== -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:ital@1&family=Poppins:ital,wght@0,600;1,500&family=Raleway:wght@300;400;500;600&family=Uchen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body,
+input,
+p
+{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body{
+    /* border: 1px solid #fa5b0f; */
+    border-radius: 10px;
+    background-color: #393939;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.441);
+    /* display: none; */
+}
+
+.container-body .title{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body .title h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fa5b0f;
+}
+
+.inputs{
+    width: 100%;
+}
+
+.container-body .input-info{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0;
+}
+
+.container-body .input-info input{
+    width: 90%;
+    height: 45px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid #fa5b0f;
+    border-radius: 20px;
+    color: #e9e9e9;
+    background-color: #393939;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+.container-body .input-info .submit{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0;
+    font-size: 18px;
+    background-color: #fa5b0f;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.container-body .input-info .submit:hover{
+     transform: scale(1.05);
+}
+
+
+
+/* submit message */
+
+.submit-message-box{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    border: 1px solid rgb(88, 223, 88);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 40px;
+    background-color: #e9e9e9;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.submit-message-box p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.submit-message-box p span{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(88, 223, 88);
+}
+
+
+.submit-message-box h2{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    right: 0px;
+    top: 0px;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.submit-message-box h2:hover{
+    color: rgba(255, 0, 0, 0.58);
+}
+
+
+
+
